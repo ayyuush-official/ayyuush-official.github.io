@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,33 +17,48 @@
       background-color: #000;
       color: #fff;
       height: 100vh;
-      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      text-align: center;
     }
 
     h1 {
       font-size: 3em;
-      text-align: center;
+      margin-bottom: 10px;
       color: #00ffff;
-      text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
-      }
-      to {
-        text-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
-      }
+      text-shadow: 0 0 10px #00ffff;
     }
 
     p {
-      margin-top: 20px;
       font-size: 1.2em;
-      color: #aaa;
-      text-align: center;
-      animation: fadeIn 3s e
+      max-width: 600px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    button {
+      background-color: #00ffff;
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #00cccc;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>The Unbreakable Dream</h1>
+  <p>A journey that started with hope and faced every storm with courage.  
+     Welcome to Ayuush’s inspiring world — where dreams never die.</p>
+  <button onclick="window.location.href='story.html'">Read the Story</button>
+</body>
+</html>
